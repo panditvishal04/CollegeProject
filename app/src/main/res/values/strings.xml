@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">College-Project</string>
+    <string name="Principal">PRINCIPAL</string>
+    <string name="HOD">HOD</string>
+    <string name="TEACHER">TEACHER</string>
+    <string name="STUDENT">STUDENT</string>
+    <string name="Gmail">ENTER YOUR GMAIL</string>
+    <string name="amount">Gmail</string>
+    <string name="Pass">PASSWORD</string>
+    <string name="Login">Login</string>
+</resources>
