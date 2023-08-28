@@ -8,12 +8,15 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import com.vishal.college_project.databinding.FragmentPrincipalLoginPageBinding
+import com.vishal.college_project.databinding.ActivityMainBinding
+import com.vishal.college_project.databinding.FragmentHomeBinding
 
-class PrincipalLoginFragment : Fragment() {
-    lateinit var binding: FragmentPrincipalLoginPageBinding
+
+class HomeFragment : Fragment() {
+    lateinit var binding : FragmentHomeBinding
+    lateinit var navController : NavController
     lateinit var mainActivity: MainActivity
-    lateinit var navController: NavController
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,17 +31,15 @@ class PrincipalLoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentPrincipalLoginPageBinding.inflate(layoutInflater)
-        return  binding.root
+        binding = FragmentHomeBinding.inflate(layoutInflater)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        binding.btnSignUp.setOnLongClickListener {
-//         mainActivity.findNavController(R.id.navController).navigate(R.id.action_principal_login_page_to_principalDashboard)
-//        }
-
+        binding.tvPRINCIPAL.setOnClickListener {
+            mainActivity.findNavController(R.id.navController).navigate(R.id.action_homeFragment_to_principal_login_page)
+        }
     }
 
 

@@ -3,11 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_nav_navigation.xml"
-    app:startDestination="@id/principal_login_page">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/principal_login_page"
         android:name="com.vishal.college_project.PrincipalLoginFragment"
         android:label="fragment_principal_login_page"
-        tools:layout="@layout/fragment_principal_login_page" />
+        tools:layout="@layout/fragment_principal_login_page" >
+        <action
+            android:id="@+id/action_principal_login_page_to_principalDashboard"
+            app:destination="@id/principalDashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/principalDashboard"
+        android:name="com.vishal.college_project.PrincipalDashboard"
+        android:label="fragment_principal_dashboard"
+        tools:layout="@layout/fragment_principal_dashboard" >
+        <action
+            android:id="@+id/action_principalDashboard_to_principal_login_page"
+            app:destination="@id/principal_login_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vishal.college_project.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_principal_login_page"
+            app:destination="@id/principal_login_page" />
+    </fragment>
 </navigation>

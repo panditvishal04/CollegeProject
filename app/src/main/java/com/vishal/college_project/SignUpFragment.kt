@@ -6,12 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.vishal.college_project.databinding.FragmentPrincipalLoginPageBinding
+import com.vishal.college_project.databinding.FragmentSignUpBinding
 
-class PrincipalLoginFragment : Fragment() {
-    lateinit var binding: FragmentPrincipalLoginPageBinding
+
+class SignUpFragment : Fragment() {
+    lateinit var binding: FragmentSignUpBinding
     lateinit var mainActivity: MainActivity
     lateinit var navController: NavController
 
@@ -28,16 +29,12 @@ class PrincipalLoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentPrincipalLoginPageBinding.inflate(layoutInflater)
+        binding = FragmentSignUpBinding.inflate(layoutInflater)
         return  binding.root
-    }
 
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-//        binding.btnSignUp.setOnLongClickListener {
-//         mainActivity.findNavController(R.id.navController).navigate(R.id.action_principal_login_page_to_principalDashboard)
-//        }
 
     }
 
