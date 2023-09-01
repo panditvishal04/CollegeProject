@@ -18,11 +18,7 @@
         android:id="@+id/principalDashboard"
         android:name="com.vishal.college_project.PrincipalDashboard"
         android:label="fragment_principal_dashboard"
-        tools:layout="@layout/fragment_principal_dashboard" >
-        <action
-            android:id="@+id/action_principalDashboard_to_principal_login_page"
-            app:destination="@id/principal_login_page" />
-    </fragment>
+        tools:layout="@layout/fragment_principal_dashboard" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.vishal.college_project.HomeFragment"

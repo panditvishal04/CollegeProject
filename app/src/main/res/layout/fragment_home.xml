@@ -103,7 +103,7 @@
         app:layout_constraintBottom_toBottomOf="@id/guideline_h_40"
         app:cardCornerRadius="20dp"
         app:cardBackgroundColor="#2B7FC8"
-        android:id="@+id/cvSalary"
+        android:id="@+id/cvHod"
         android:clickable="true"
         >
         <ImageView
@@ -134,7 +134,7 @@
         app:layout_constraintBottom_toBottomOf="@id/guideline_h_75"
         app:cardCornerRadius="20dp"
         app:cardBackgroundColor="#EF6C00"
-        android:id="@+id/cvAttendance"
+        android:id="@+id/cvTeacher"
         android:clickable="true"
         >
         <ImageView
@@ -164,7 +164,7 @@
         app:layout_constraintBottom_toBottomOf="@id/guideline_h_75"
         app:cardCornerRadius="20dp"
         app:cardBackgroundColor="#E84BB3"
-        android:id="@+id/cvAdvance"
+        android:id="@+id/cvStudent"
         android:clickable="true"
         >
         <ImageView

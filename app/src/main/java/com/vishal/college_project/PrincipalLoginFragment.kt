@@ -35,7 +35,7 @@ class PrincipalLoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.btnSignUp.setOnLongClickListener {
+//        binding.btnLogin.setOnLongClickListener {
 //         mainActivity.findNavController(R.id.navController).navigate(R.id.action_principal_login_page_to_principalDashboard)
 //        }
 

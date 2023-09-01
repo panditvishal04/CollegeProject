@@ -1,13 +1,14 @@
-package com.vishal.college_project
+package com.vishal.college_project.STUDENT_DASHBOARD
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.vishal.college_project.R
 
 
-class PrincipalDashboard : Fragment() {
+class Student_dashboard_Fragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,7 @@ class PrincipalDashboard : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_principal_dashboard, container, false)
+        return inflater.inflate(R.layout.fragment_student_dashboard_, container, false)
     }
 
 

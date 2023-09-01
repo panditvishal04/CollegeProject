@@ -40,6 +40,15 @@ class HomeFragment : Fragment() {
         binding.tvPRINCIPAL.setOnClickListener {
             mainActivity.findNavController(R.id.navController).navigate(R.id.action_homeFragment_to_principal_login_page)
         }
+        binding.cvHod.setOnClickListener {
+            mainActivity.findNavController(R.id.navController).navigate(R.id.action_homeFragment_to_principal_login_page)
+        }
+        binding.cvTeacher.setOnClickListener {
+            mainActivity.findNavController(R.id.navController).navigate(R.id.action_homeFragment_to_principal_login_page)
+        }
+        binding.cvStudent.setOnClickListener {
+            mainActivity.findNavController(R.id.navController).navigate(R.id.action_homeFragment_to_principal_login_page)
+        }
     }
 
 
